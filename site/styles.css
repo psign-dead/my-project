@@ -1,0 +1,105 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2c6b3e; /* Темно-зеленый */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Блоки */
+.block {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+#welcome {
+    background-color: #d1e4dd; /* Песочный с зелеными оттенками */
+    text-align: center;
+    padding: 80px 0;
+}
+
+#about, #services, #contact, #reviews, #addresses {
+    background-color: #fff;
+}
+
+#about, #services, #contact {
+    background-color: #FAF0E6; /* Светлый песочный */
+}
+
+#services .service-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+#services .service-item {
+    background-color: #c3d9c7; /* Песочный */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#services .service-item h3 {
+    color: #2c6b3e;
+}
+
+#reviews .review-list {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+#reviews .review-item {
+    border-left: 4px solid #2c6b3e;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#addresses ul {
+    list-style-type: none;
+}
+
+footer {
+    background-color: #2c6b3e; /* Темно-зеленый */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    #services .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #services .service-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
